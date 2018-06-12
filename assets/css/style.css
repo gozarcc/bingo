@@ -1,0 +1,280 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* bingo header */
+#bingoHeader {
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	font-size: 7em;
+}
+
+/* overlay */
+#overlay {
+	background-color: #242424;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 999;
+}
+
+/* bingo card */
+#bingoCard table {
+	height: 100%;
+	width: 100%;
+}
+
+#bingoCard th, #bingoCard td {
+	border: 3px solid black;
+	padding: 0.1em 0.4em;
+	text-align: center;
+	font-size: 4em;
+}
+
+#bingoCard th {
+	background-color: #212121;
+	color: #eceadf;
+}
+#bingoCard td {
+	background-color: #dad5cd;
+}
+#bingoName {
+	font-size: 7.5rem;
+	letter-spacing: 3px;
+}
+
+/* containers */
+#jumbotronCon {
+	height: 100vh;
+	/*position: relative;*/
+}
+#cardCon,
+#drawCon {
+	color: black;
+	height: 42.1rem;
+	position: relative;
+}
+#cardColumn,
+#drawColumn {
+	height: 100%;
+}
+#drawColumn {
+	padding-top: 5rem;
+}
+
+/* bingo card */
+#bingoCard {
+	width: 100%;
+}
+
+/* draw new number */
+#drawBall {
+	background-color: #dad5cd;
+	border: 2px solid black;
+	border-radius: 100%;
+	height: 30rem;
+	width: 30rem;
+}
+#drawNum {
+	text-align: center;
+	font-size: 15em;
+	line-height: 1.9em;
+}
+
+/* buttons */
+#btnNewCard,
+#btnDraw, 
+#btnPlayNow,
+#btnPlayAgain,
+#btnBingo {
+	position: absolute;
+	bottom: -12%;
+	left: 50%;
+	transform: translate(-50%);
+}
+#btnPlayNow {
+	font-size: 3em;
+	bottom: 40%;
+}
+#btnPlayAgain {
+	font-size: 3em;
+	bottom: 35%;
+}
+#btnNewCard{
+	left: 40%;
+}
+#btnBingo{
+	left: 60%;
+	pointer-events: none;
+	opacity: 0.7;
+}
+/* display numbers */
+#displayNums td {
+	border: 2px solid black;
+	background-color: #dad5cd;
+	padding: 12px 5px;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+/* winner */
+#wonCon {
+	background-color: #242424;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 999;
+}
+#wonCon h1 {
+	color: #fff;
+	position: absolute;
+	font-size: 7em;
+}
+#wonCon h1:nth-child(1) {
+	top: 28%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+}
+#wonCon h1:nth-child(2) {
+	top: 41%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+}
+
+
+
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	/* winner */
+	#wonCon h1:nth-child(1) {
+		font-size: 2.1em;
+	}
+	#wonCon h1:nth-child(2) {
+		font-size: 2.1em;
+	}
+
+	/* bingo header */
+	#bingoHeader {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -80%);
+		font-size: 5em;
+	}
+
+	#bingoCard table {
+		margin-left: 0;
+	}
+    #bingoCard th, #bingoCard td {
+		font-size: 1em;
+	}
+	#bingoName {
+		font-size: 5rem;
+		letter-spacing: 3px;
+	}
+	/* containers */
+	#jumbotronCon {
+		height: 100%;
+	}
+	#cardCon {
+		height: 17.5rem;
+	}
+	#drawCon {
+		height: 19.5rem;
+	}
+	#drawCon {
+		padding-top: 0;
+	}
+	#drawColumn {
+		padding-top: 0;
+	}
+	/* draw new number */
+	#drawBall {
+		height: 13rem;
+		width: 13rem;
+	}
+	#drawNum {
+		font-size: 5em;
+		line-height: 2.50em;
+	}
+	/* buttons */
+	#btnNewCard{
+		bottom: 11%;
+		left: 35%;
+		font-size: 0.8em
+	}
+	#btnBingo{
+		bottom: 11%;
+		left: 70%;
+		font-size: 0.8em
+	}
+	#btnDraw {
+		bottom: 10%;
+		font-size: 0.8em
+	}
+	#btnPlayNow {
+		font-size: 2em;
+		bottom: 25%;
+	}
+	#btnPlayAgain {
+		font-size: 1.2em;
+		bottom: 35%;
+	}
+
+	/* display numbers */
+	#displayNums td {
+		border: 2px solid black;
+		padding: 12px 5px;
+		font-size: 1em;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	/* winner */
+	#wonCon h1:nth-child(1) {
+		font-size: 4.6em;
+	}
+	#wonCon h1:nth-child(2) {
+		font-size: 4.6em;
+	}
+
+	/* bingo header */
+	#bingoHeader {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -80%);
+		font-size: 5em;
+	}
+
+	/* buttons */
+    #btnPlayNow {
+		font-size: 2em;
+		bottom: 35%;
+	}
+	#btnPlayAgain {
+		font-size: 2em;
+		bottom: 35%;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
