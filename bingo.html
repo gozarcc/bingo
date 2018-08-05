@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
 	<!-- animate css -->
-	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -29,28 +29,30 @@
 				
 				<div class="container-fluid">
 					<div class="row">
-						<div id="cardCon" class="col-12 col-sm-12 col-md-6 col-lg-5">
-							<div class="row mt-1">
+						<div id="cardCon" class="col-12 col-sm-12 col-md-12 col-lg-12">
+							<!-- <div class="row mt-1"> -->
 								<div id="cardColumn" class="col-12 col-sm-12 col-md-12 col-lg-12">
 									<div id="bingoCard" class="col-12 col-sm-12 col-md-12 col-lg-12 px-0"></div>
 								</div>
 								<button id="btnNewCard" class="btn btn-info btn-lg mt-5 mx-auto">Get New Card</button>
 								<a id="btnBingo" href="won.html" class="btn btn-info btn-lg mt-5 mx-auto">Bingo!</a>
-							</div>
+							<!-- </div> -->
 						</div> <!-- end of cardCon -->
+					</div>	
 						
-						<div id="drawCon" class="col-12 col-sm-12 col-md-6 col-lg-4 px-0">
-							<div class="row mt-1">
+					<div class="row">
+						<div id="drawCon" class="col-12 col-sm-12 col-md-12 col-lg-6 px-0 mt-5">
+							<!-- <div class="row mt-1"> -->
 								<div id="drawColumn" class="col-12 col-sm-12 col-md-12 col-lg-12">
 									<div id="drawBall" class="m-auto">
 										<h1 id="drawNum"></h1>
 									</div>
+									<button id="btnDraw" class="btn btn-info btn-lg mt-5 mx-auto">Draw new number</button>
 								</div>
-								<button id="btnDraw" class="btn btn-info btn-lg mt-5 mx-auto">Draw new number</button>
-							</div>
+							<!-- </div> -->
 						</div> <!-- end of drawCon -->
 
-						<div id="displayNumsCon" class="col-12 col-sm-12 col-md-12 col-lg-3">
+						<div id="displayNumsCon" class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
 							<div class="row">
 								<span id="displayNums" class="mx-auto"></span>
 							</div>

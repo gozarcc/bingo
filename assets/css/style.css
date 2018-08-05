@@ -42,6 +42,7 @@
 }
 #bingoCard td {
 	background-color: #dad5cd;
+	cursor: pointer;
 }
 #bingoName {
 	font-size: 7.5rem;
@@ -50,8 +51,14 @@
 
 /* containers */
 #jumbotronCon {
-	height: 100vh;
+	height: 100%;
 	/*position: relative;*/
+}
+#jumbotronCon .row:nth-child(1) {
+	margin-bottom: 3rem !important;
+}
+#jumbotronCon .row:nth-child(2) {
+		padding-top: 3rem !important;
 }
 #cardCon,
 #drawCon {
@@ -120,6 +127,7 @@
 	padding: 12px 5px;
 	font-size: 1.8em;
 	text-align: center;
+	cursor: none;
 }
 
 /* winner */
@@ -194,6 +202,14 @@
 	#drawColumn {
 		padding-top: 0;
 	}
+	#jumbotronCon .row:nth-child(1) {
+		margin-bottom: 0 !important;
+	}
+	#jumbotronCon .row:nth-child(2) {
+		padding-top: 0 !important;
+	}
+
+
 	/* draw new number */
 	#drawBall {
 		height: 13rem;
@@ -235,10 +251,6 @@
 	}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -250,6 +262,11 @@
 		font-size: 4.6em;
 	}
 
+	#drawCon {
+		margin-top: 0 !important;
+		margin-bottom: 3rem;
+	}
+
 	/* bingo header */
 	#bingoHeader {
 		top: 40%;
@@ -258,7 +275,16 @@
 		font-size: 5em;
 	}
 
+	#drawColumn {
+		position: relative;
+	}
 	/* buttons */
+	#btnDraw {
+		/*margin-top: 0 !important;*/
+		position: absolute;
+		/*top: 83% !important;*/
+		bottom: 4%;
+	}
     #btnPlayNow {
 		font-size: 2em;
 		bottom: 35%;
@@ -267,14 +293,4 @@
 		font-size: 2em;
 		bottom: 35%;
 	}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
 }
